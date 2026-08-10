@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="welcome">
+        <img id="mode" onmouseover="type('Switch to light mode?')" onclick="lamp()" src="/images/lamp.png" alt="">
+        <div id="bubble" class="bubble outgoing">
+            hmm
+        </div>
+        
+        <div id="character">
+            <img class="character-images char" src="/images/char.png" alt="">
+            <img class="character-images eye"  id="character-eye" src="/images/eye.png" alt="">
+        </div>
+
+        <ul id="list">
+            <img id="list-menu" onclick="showAboutMe()" src="/images/aboutme.png">
+            <img id="list-menu" src="/images/myarts.png" onclick="showMyArt()">
+            <img id="list-menu" onclick="showContact() " src="/images/contact.png">
+        </ul>
+        <div id="about-me" class="woi">
+            <img id="phone" src="/images/phone.png" alt="">
+            <button id="close" onclick="hideAboutMe()"></button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div id="overlay2"></div>
+    <div id="my-art">
+        <img id="computer" src="/images/computer.png">
+        
+        <div id="arts">
+            <h1 id="arts-menu">My Arts</h1>
+            <ul id="art">
+                <li id="list-art"> 
+                    <img id="thumbnail-art" src="/images/computer-background.png" alt="thumbnail">
+                    <h1 id="title-art">Judull</h1>
+                    <p id="desc-art">Deskripsi</p>
+                </li>
+            </ul>
+            
+            <h1 id="arts-menu">My Achievement</h1>
+            <ul id="art">
+                <li id="list-art"> 
+                    <img id="thumbnail-art" src="/images/computer-background.png" alt="thumbnail">
+                    <h1 id="title-art">Judull</h1>
+                    <p id="desc-art">Deskripsi</p>
+                </li>
+
+                </li>
+            </ul>
+        </div>
+        <img id="computer-background" src="/images/computer-background.png" alt="">
+        <div class="close-comp" onclick="hideMyArt()"></div>
+    </div>
+
+    <audio src="/sounds/backsound.mp3" autoplay loop></audio>
+    <div id="contact">
+        <div id="sosmed">
+            <img class="list-sosmed" id="github" src="/images/github.png" alt="">
+            <a class="list-sosmed" href="https://www.instagram.com/adr6hmn/" target="_blank" id="instagram" ><img id="instagram" src="/images/instagram.png" alt=""></a>
+            <a class="list-sosmed" href="https://wa.me/082253822165" target="_blank" id="whatsapp"><img id="whatsapp" src="/images/whatsapp.png" alt=""></a>
+            <a class="list-sosmed" href="https://www.tiktok.com/@adr6hmn" target="_blank" id="tiktok"><img id="tiktok" src="/images/tiktok.png" alt=""></a>
+            
+            <img id="close-contact" onclick="hideContact()" src="/images/close-comp.png" alt="">
+        </div>
+        <img id="contact-background" src="/images/contact-background.png" alt="">
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+body {
+    font-family: "Patrick Hand", cursive;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#welcome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://i.pinimg.com/1200x/4a/fc/2c/4afc2ce71528fd8dc05dc2263b6958d3.jpg");
+}
+
+#mode {
+    transform: translateY(-50px);
+    transform: translateX(50px);
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    cursor: pointer;
+    filter: drop-shadow(black 0px 0px 50px);
+    transition: scale 0.5s ease, filter 0.5s ease;
+
+}
+
+#mode:hover {
+    scale: 1.1;
+    transition: scale 0.5s ease, filter 0.5s ease;
+    filter: drop-shadow(rgb(72, 72, 72) 0px 0px 20px);
+
+}
+
+.bubble {
+    transform:translateY(200px) translateX(200px);
+    scale: 1.5;
+    margin: 10px;
+    z-index: 5;
+    position: absolute;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 20%;
+    font-size: 14px;
+    line-height: 1.4;
+    filter: drop-shadow(black 0px 0px 20px);
+    pointer-events: none;
+}
+
+.bubble.outgoing {
+    background-color: white;
+    color: black;
+    align-items: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+
+#list {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align:center;
+    list-style: none;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#list-menu {
+    width: auto;
+    height: 300px;
+    margin: 50px 10px ;
+    transition: 0.5s ease;
+    z-index: 2;
+    filter: drop-shadow(black 0px 0px 20px);
+}
+
+#list-menu:hover {
+    margin: 80px 25px;
+    padding: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    scale: 1.2;
+    filter: drop-shadow(white 0px 0px 20px);
+}
+
+#character {
+    position: absolute;
+    width: 100vw;
+    height: 102vh;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(black 0px 0px 50px);
+}
+
+
+.character-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.char {
+    z-index: 1;
+}
+
+.eye {
+    z-index: 0;
+}
+
+
+
+#about-me {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    right: -1000px;
+    z-index: 4;
+    transition: all 1s ease;
+    filter: drop-shadow(rgba(128, 128, 128, 0.472) 0px 0px 100px);
+    animation: scalephone 1s infinite ease-in-out;
+}
+
+#phone {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    opacity: 1;
+}
+
+#close {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0%;
+    border: none;
+    border-radius: 50%;
+    filter: blur(10px);
+    cursor: pointer;
+
+}
+
+#close:hover {
+    transition: opacity ease 0.3s;
+    opacity: 20%;
+}
+
+#my-art {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.5s ease;
+    z-index: 5;
+}
+
+#computer-background {
+    opacity: 0%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    left: 0;
+    z-index: 5;
+    scale: 1.2;
+    filter: drop-shadow(black 0px 0px 100px);
+}
+
+#arts {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 6;
+    background-image: url(/images/art-background.png);
+    height: 75%;
+    width: 80%;
+    overflow-y: scroll;
+}
+
+#arts #arts-menu {
+    color: white;
+    padding: 150px 0px 0px 50px;
+}
+
+#art {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 100px;
+    z-index: 6;
+    flex-wrap: wrap;
+}
+
+#art * {
+}
+
+#art li {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 20px 20px ;
+    width: 350px;
+    height: 250px;
+    border: #625e5b solid 2px;
+    border-radius: 10px;
+    background-color: #0c0c0c;
+    transition: all 0.5s ease;
+    
+}
+
+#art li:hover {
+    transition: all 0.5s ease;
+    border: #f8f8f8 solid 2px;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+#art li h1 {
+    margin: 0px;
+    pointer-events: none;
+
+}
+#art li p {
+    pointer-events: none;
+    margin: 0px;
+}
+
+#art li img {
+    border-radius: 10px 10px 0px 0px ;
+    text-align: center;
+    border-bottom: #625e5b solid 2px ;
+    width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+
+}
+
+#computer {
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(black 0px 0px 50px);
+    z-index: 7;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.close-comp {
+    height: 200px;
+    width: 200px;
+    z-index: 8;
+    position: absolute;
+    top: 0;
+    margin: 30px 0px;
+    background-image: url(/images/close-comp.png);
+    background-size: 100%;
+    filter: drop-shadow(black 0px 0px 20px);
+    transition: filter 0.5s ease, scale 0.5s ease;
+
+}
+
+
+.close-comp:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: filter 0.5s ease, scale 0.5s ease;
+
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0%;
+    position: absolute;
+    top: 100;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    z-index: 3;
+    transition: all 0.5s ease;
+}
+#overlay2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    z-index: 1;
+    opacity: 70%;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(rgba(128, 128, 128, 0.474) 0px 0px 1000px);
+    top: 0;
+    right: 0;
+    transform: translateX(1800px);
+    position: absolute;
+    display: flex;
+    scale: 0.45;
+    width: 200px;
+    height: 100vh;
+    transition: all 0.5s ease;
+    z-index: 10;
+    animation: scalecontact 1s infinite ease-in-out;
+}
+
+#sosmed img {
+    transition: all 0.5s ease;
+}
+
+#sosmed img:hover {
+    scale: 1.1;
+    filter: drop-shadow(black 0px 0px 20px);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#sosmed {
+    display: flex;
+    position: absolute;
+    top: -5%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#close-contact {
+    margin: 50px 0px;
+    width: 500px;
+    top: 75%;
+    left: -130px;
+    cursor: pointer;
+    z-index: 11;
+    filter: drop-shadow(black 0px 0px 10px);
+    transition: scale 0.5s ease, filter 0.5s ease;
+}
+
+
+#github {
+    width: 600px;
+    transform: translate(10px, 30px);
+    filter: drop-shadow(black 0px 0px 10px);
+    z-index:10 ;
+}
+
+#instagram {
+    width: 600px;
+    filter: drop-shadow(black 0px 0px 10px);
+    z-index:10 ;
+    
+}
+
+#whatsapp {
+    width: 600px;
+    filter: drop-shadow(black 0px 0px 10px);
+    z-index:10 ;
+    
+}
+
+#tiktok {
+    width: 600px;
+    filter: drop-shadow(black 0px 0px 10px);
+    z-index:10 ;
+
+}
+
+#contact-background {
+    filter: drop-shadow(black 0px 0px 10px);
+    z-index:9 ;
+}
+
+
+@keyframes scalephone {
+        0% {
+            scale: 1;
+        }50% {
+            scale: 1.01;
+        }100%{
+            scale: 1;
+}
+}
+@keyframes scalecontact {
+        0% {
+            scale: 0.45;
+        }50% {
+            scale: 0.454;
+        }100%{
+            scale: 0.45;
+}
+}
