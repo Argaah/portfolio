@@ -13,20 +13,13 @@ body {
     font-family: "Patrick Hand", cursive;
 }
 
-/* CANVAS UTAMA */
 #welcome {
-
-    /* UKURAN DESAIN ASLI */
     width: 1920px;
     height: 1080px;
-
     top: 0;
     left: 0;
-
     transform-origin: top left;
-
     overflow: hidden;
-
     background-image: url("https://i.pinimg.com/1200x/4a/fc/2c/4afc2ce71528fd8dc05dc2263b6958d3.jpg");
     background-position: center;
     background-size: cover;
@@ -42,7 +35,6 @@ body {
     cursor: pointer;
     filter: drop-shadow(black 0px 0px 50px);
     transition: scale 0.5s ease, filter 0.5s ease;
-
 }
 
 #mode:hover {
