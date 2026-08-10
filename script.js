@@ -217,3 +217,19 @@ listMenu[2].addEventListener('mouseover', ()=> {
     type('If you need anything, just contact')
 })
 
+function responsive() {
+
+    const designWidth = 1920;
+    const designHeight = 1080;
+
+    const scaleX = window.innerWidth / designWidth;
+    const scaleY = window.innerHeight / designHeight;
+
+    const scale = Math.min(scaleX, scaleY);
+
+    document.querySelector("#welcome").style.zoom = scale;
+}
+
+window.addEventListener("resize", responsive);
+
+responsive();
