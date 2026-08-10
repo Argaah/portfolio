@@ -142,9 +142,9 @@ listArt.forEach(art => {
 
 
 function showAboutMe() {
+    aboutMe.style.transform = 'translateX(0px)'
     aboutMe.style.transition = 'all 0.5s ease'
     aboutMe.style.opacity = '100%'
-    aboutMe.style.right = '0'
     overlay.style.transition = 'all 0.5s ease'
     overlay.style.opacity = '100%'
     overlay.style.top = '0'
@@ -155,7 +155,7 @@ function showAboutMe() {
 function hideAboutMe() {
     aboutMe.style.transition = 'all 0.5s ease'
     aboutMe.style.opacity = '0%'
-    aboutMe.style.right = '-1000px'
+    aboutMe.style.transform = 'translateX(1500px)'
     overlay.style.transition = 'all 0.5s ease'
     overlay.style.opacity = '0%'
     overlay.style.top = '100%'
@@ -217,19 +217,4 @@ listMenu[2].addEventListener('mouseover', ()=> {
     type('If you need anything, just contact')
 })
 
-function responsive() {
 
-    const designWidth = 1920;
-    const designHeight = 1080;
-
-    const scaleX = window.innerWidth / designWidth;
-    const scaleY = window.innerHeight / designHeight;
-
-    const scale = Math.min(scaleX, scaleY);
-
-    document.querySelector("#welcome").style.zoom = scale;
-}
-
-window.addEventListener("resize", responsive);
-
-responsive();

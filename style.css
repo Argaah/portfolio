@@ -1,29 +1,36 @@
-
 html,
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Patrick Hand", cursive;
     overflow: hidden;
-    overscroll-behavior: none;
 }
 
+body {
+    position: fixed;
+    inset: 0;
+    font-family: "Patrick Hand", cursive;
+}
+
+/* CANVAS UTAMA */
 #welcome {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    max-height: 100vh;
-    max-width: 100vw;
+
+    /* UKURAN DESAIN ASLI */
+    width: 1920px;
+    height: 1080px;
+
+    top: 0;
+    left: 0;
+
+    transform-origin: top left;
+
     overflow: hidden;
+
+    background-image: url("https://i.pinimg.com/1200x/4a/fc/2c/4afc2ce71528fd8dc05dc2263b6958d3.jpg");
     background-position: center;
     background-size: cover;
-    background-image: url("https://i.pinimg.com/1200x/4a/fc/2c/4afc2ce71528fd8dc05dc2263b6958d3.jpg");
 }
-
 #mode {
     transform: translateY(-50px);
     transform: translateX(50px);
@@ -125,13 +132,20 @@ body {
 
 
 #about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(rgba(128, 128, 128, 0.474) 0px 0px 1000px);
+    top: 0;
+    right: 0;
+    transform: translateX(1800px);
     position: absolute;
+    display: flex;
+    scale: 1;
     width: 600px;
-    height: auto;
-    right: -1000px;
-    z-index: 4;
-    transition: all 1s ease;
-    filter: drop-shadow(rgba(128, 128, 128, 0.472) 0px 0px 100px);
+    height: 100vh;
+    transition: all 0.5s ease;
+    z-index: 10;
     animation: scalephone 1s infinite ease-in-out;
 }
 
