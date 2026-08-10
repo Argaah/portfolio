@@ -6,7 +6,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Patrick Hand", cursive;
-    
+    overscroll-behavior: none;
+    overscroll-behavior-y: none;
     overflow: hidden;
     overscroll-behavior: none;
 }
@@ -23,6 +24,8 @@ body {
     position: fixed;
     inset: 0;
     overflow: hidden;
+    position: fixed;
+    touch-action: none;
 }
 
 #mode {
