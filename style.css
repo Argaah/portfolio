@@ -189,7 +189,7 @@ body {
     flex-direction: column;
     position: absolute;
     z-index: 6;
-    background-image: url("./images/art-background.png");
+    background-image: url("https://github.com/Argaah/portfolio/blob/main/images/art-background.png");
     height: 75%;
     width: 80%;
     overflow-y: scroll;
