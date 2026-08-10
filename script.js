@@ -109,31 +109,6 @@ window.addEventListener('mouseover', (e)=> {
     background.style.backgroundPositionX = -posX/90 + 'px'
     background.style.backgroundPositionY = -posY/90 + 'px'
 })
-window.addEventListener('pointerdown', (e)=> {
-    const rect = character.getBoundingClientRect()
-    
-    const centerX = rect.left + rect.width / 2
-    const centerY = rect.top + rect.height / 2
-
-    let posY = e.clientY - centerY
-    let posX = e.clientX - centerX
-
-
-    mode.style.top = -posY/100 + 'px'
-    mode.style.left = -posX/100 + 'px'
-    bubble.style.top = posY/40 + 'px'
-    bubble.style.left = posX/40 + 'px'
-    backgroundComp.style.left = -posX/20 + 'px'
-    backgroundComp.style.top = -posY/20 + 'px'
-    list.style.left = posX/20 + 'px'
-    list.style.top = posY/20 + 'px'
-    charEye.style.top = posY/10 + 'px'
-    charEye.style.left = posX/30 + 'px'
-    character.style.top = posY/40 + 'px'
-    character.style.left = posX/50 + 'px'
-    background.style.backgroundPositionX = -posX/90 + 'px'
-    background.style.backgroundPositionY = -posY/90 + 'px'
-})
 
 
 overlay2.addEventListener('mouseover', ()=> {
