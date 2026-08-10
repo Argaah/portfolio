@@ -17,13 +17,13 @@ let listSosmed = document.querySelectorAll('.list-sosmed')
 let listArt = document.querySelectorAll('#list-art')
 
 const sounds = {
-    comp: new Audio('/sounds/comp.mp3'),
-    phone: new Audio('/sounds/phone.mp3'),
-    contact: new Audio('/sounds/contact.mp3'),
-    mode: new Audio('/sounds/mode.mp3'),
-    hover: new Audio('/sounds/hover.mp3'),
-    hover2: new Audio('/sounds/hover2.mp3'),
-    hmm: new Audio('/sounds/hm.mp3'),
+    comp: new Audio('./sounds/comp.mp3'),
+    phone: new Audio('./sounds/phone.mp3'),
+    contact: new Audio('./sounds/contact.mp3'),
+    mode: new Audio('./sounds/mode.mp3'),
+    hover: new Audio('./sounds/hover.mp3'),
+    hover2: new Audio('./sounds/hover2.mp3'),
+    hmm: new Audio('./sounds/hm.mp3'),
 };
 
 
