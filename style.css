@@ -18,9 +18,6 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
-    overflow: hidden;
     background-position: center;
     background-size: cover;
     background-image: url("https://i.pinimg.com/1200x/4a/fc/2c/4afc2ce71528fd8dc05dc2263b6958d3.jpg");
