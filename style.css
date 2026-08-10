@@ -10,6 +10,8 @@ body {
     overscroll-behavior-y: none;
     overflow: hidden;
     overscroll-behavior: none;
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 #welcome {
