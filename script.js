@@ -84,7 +84,7 @@ mode.addEventListener('mouseenter', ()=> {
 
 })
 
-window.addEventListener('pointerdown', (e)=> {
+window.addEventListener('touchmove', (e)=> {
     const rect = character.getBoundingClientRect()
     
     const centerX = rect.left + rect.width / 2
