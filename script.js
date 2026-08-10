@@ -84,7 +84,7 @@ mode.addEventListener('mouseenter', ()=> {
 
 })
 
-window.addEventListener('pointermove', (e)=> {
+window.addEventListener('mouseover', (e)=> {
     const rect = character.getBoundingClientRect()
     
     const centerX = rect.left + rect.width / 2
@@ -111,7 +111,7 @@ window.addEventListener('pointermove', (e)=> {
 })
 
 
-overlay2.addEventListener('pointermove', ()=> {
+overlay2.addEventListener('mouseover', ()=> {
     type('Hmmm...')
 })
 
@@ -128,13 +128,13 @@ listMenu.forEach(menu => {
 })
     
 listSosmed.forEach(sosmed => {
-    sosmed.addEventListener('pointermove', (e)=> {
+    sosmed.addEventListener('mouseover', (e)=> {
         playSound('hover')
     })
 })
     
 listArt.forEach(art => {
-    art.addEventListener('pointermove', (e)=> {
+    art.addEventListener('mouseover', (e)=> {
         playSound('hover2')
     })
 })
@@ -205,15 +205,15 @@ function hideContact() {
 
 
 
-listMenu[0].addEventListener('pointermove', ()=> {
+listMenu[0].addEventListener('mouseover', ()=> {
     type('Who is this')
 })
 
-listMenu[1].addEventListener('pointermove', ()=> {
+listMenu[1].addEventListener('mouseover', ()=> {
     type('What kind of things are here?')
 })
 
-listMenu[2].addEventListener('pointermove', ()=> {
+listMenu[2].addEventListener('mouseover', ()=> {
     type('If you need anything, just contact')
 })
 
