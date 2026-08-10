@@ -10,6 +10,9 @@ body {
     max-height: 100vh;
     overflow: hidden;
     overscroll-behavior: none;
+    overscroll-behavior-y: none;
+    overscroll-behavior-y: none;
+
 }
 
 #welcome {
@@ -18,8 +21,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-      position: fixed;
-
+     touch-action: none;
     inset: 0;
     overflow: hidden;
     background-position: center;
