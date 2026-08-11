@@ -176,7 +176,7 @@ function showMyArt() {
     myArt.style.transition = 'all 1s ease'
     myArt.style.top = '0%'
     myArt.style.display = 'flex'
-    backgroundComp.style.transition = 'all 3s ease'
+    backgroundComp.style.transition = 'opacity 3s ease'
     backgroundComp.style.opacity = '100%'
     playSound('comp')
     

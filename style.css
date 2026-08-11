@@ -453,17 +453,21 @@ body {
     background-repeat: no-repeat;
 
     }
-    #arts {
+#arts {
     width: 100vw;
     max-width: 600px;
     aspect-ratio: 558 / 984;
 
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 
     touch-action: pan-y;
-    -webkit-overflow-scrolling: touch;
 }
 
+#arts * {
+    position: relative;
+    width: 100%;
+    height: 1500px;
+}
 
 }
