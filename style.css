@@ -463,14 +463,18 @@ body {
     background-repeat: no-repeat;
 
     }
-#arts {
+    #arts {
     display: flex;
     justify-items: center;
     align-items: center;
     width: 100vw;
     overflow-y: auto;
     overflow-x: hidden;
-}
-
+    text-align: center;
+    }
+    #arts #arts-menu {
+        padding: 0%;
+        margin: 0%;
+    }
 
 }
