@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    border: none;
+
 }
 
 body {
@@ -176,6 +178,7 @@ body {
     z-index: 5;
     scale: 1.2;
     filter: drop-shadow(black 0px 0px 100px);
+    border: none;
 }
 
 #arts {
@@ -186,7 +189,7 @@ body {
     background-image: url("./images/art-background.png");
     height: 75%;
     width: 80%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #arts #arts-menu {
@@ -255,9 +258,13 @@ body {
     align-items: center;
     filter: drop-shadow(black 0px 0px 50px);
     z-index: 7;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     transition: all 0.5s ease;
+    background-image: url("./images/computer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -433,5 +440,28 @@ body {
     #phone {
         scale: 0.5;
         transform: translate(280px, 150px);
+    }
+    #computer {
+    width: 100vw;
+    max-width: 600px;
+
+    aspect-ratio: 558 / 984;
+    border: none;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    }
+    #arts {
+    width: 100vw;
+    max-width: 600px;
+    border: none;
+
+    aspect-ratio: 558 / 984;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     }
 }
