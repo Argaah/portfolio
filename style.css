@@ -429,7 +429,6 @@ body {
     #contact {
         left: 55vw;
         scale: 0.15;
-        transform: translateY(-100px);
     }
     #phone {
         scale: 0.5;
