@@ -16,6 +16,15 @@ let contact = document.getElementById('contact')
 let listSosmed = document.querySelectorAll('.list-sosmed')
 let listArt = document.querySelectorAll('#list-art')
 
+
+const backsound = document.getElementById('backsound');
+
+document.addEventListener('click', () => {
+    backsound.play().catch(err => {
+        console.log('Audio gagal diputar:', err);
+    });
+}, { once: true });
+
 const sounds = {
     comp: new Audio('./sounds/comp.mp3'),
     phone: new Audio('./sounds/phone.mp3'),
