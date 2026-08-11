@@ -408,7 +408,7 @@ body {
 }
 
 
-@media (max-width: 412px) {
+@media (max-width: 600px) {
     #list-menu {
         height: auto;
         width: 30%;
