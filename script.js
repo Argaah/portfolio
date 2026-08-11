@@ -106,8 +106,8 @@ window.addEventListener('mousemove', (e)=> {
     charEye.style.left = posX/30 + 'px'
     character.style.top = posY/40 + 'px'
     character.style.left = posX/50 + 'px'
-    background.style.backgroundPositionX = -posX/90 + 'px'
-    background.style.backgroundPositionY = -posY/90 + 'px'
+    background.style.backgroundPositionY = `calc(50% + ${-posY / 90}px)`;
+    background.style.backgroundPositionX = `calc(50% + ${-posX / 90}px)`;
     console.log(charEye.style.top)
 if (parseInt(charEye.style.top) <= -10.000) {
     charEye.style.top = '-10.000px';
