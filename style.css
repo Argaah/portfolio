@@ -432,7 +432,7 @@ body {
         transform: translateY(-100px);
     }
     #phone {
-        scale: 0.4;
+        scale: 0.5;
         transform: translate(280px, 150px);
     }
 }
