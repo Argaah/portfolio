@@ -144,34 +144,12 @@ body {
 
 #phone {
     display: block;
-
+    cursor: pointer;
     width: 100%;
     height: auto;
-
     opacity: 1;
 }
 
-#close {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
-    transition: all 0.5s ease;
-    background: rgba(255, 255, 255, 0.9);
-    opacity: 0%;
-    border: none;
-    border-radius: 50%;
-    filter: blur(10px);
-    cursor: pointer;
-
-}
-
-#close:hover {
-    transition: opacity ease 0.3s;
-    opacity: 20%;
-}
 
 #my-art {
     display: flex;
@@ -430,7 +408,7 @@ body {
 }
 
 
-@media (max-width: 393px) {
+@media (max-width: 900px) {
     #list-menu {
         height: auto;
         width: 50%;
@@ -455,9 +433,5 @@ body {
     #phone {
         scale: 0.4;
         transform: translate(220px, 150px);
-    }
-    #close {
-        scale: 0.4;
-        transform: translate(130px, -230px);
     }
 }
