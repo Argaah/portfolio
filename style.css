@@ -408,10 +408,10 @@ body {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 375px) {
     #list-menu {
         height: auto;
-        width: 50%;
+        width: 30%;
         transform: translateX(-35px);
         margin: 50px 0px;
         padding: 0px;
@@ -420,18 +420,18 @@ body {
         transform: scale(1.5) translateY(80px);
     }
     #mode {
-        transform: scale(0.7) translateY(-100px);
+        transform: scale(0.5) translate(-30px, -200px);
     }
     #bubble {
-        transform: scale(0.5) translate(20px, 300px);
+        transform: scale(0.5) translate(20px, 250px);
     }
     #contact {
-        left: 65vw;
-        transform: scale(0.2);
-        scale: 0.2;
+        left: 55vw;
+        scale: 0.15;
+        transform: translateY(-100px);
     }
     #phone {
         scale: 0.4;
-        transform: translate(220px, 150px);
+        transform: translate(280px, 150px);
     }
 }
