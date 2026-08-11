@@ -467,16 +467,9 @@ body {
     justify-items: center;
     align-items: center;
     width: 100vw;
-    max-width: 600px;
-    aspect-ratio: 558 / 984;
     overflow-y: auto;
     overflow-x: hidden;
-    touch-action: pan-y;
 }
 
-#arts * {
-    position: relative;
-    width: 100%;
-}
 
 }
