@@ -9,6 +9,9 @@ body {
 
 }
 
+
+
+
 body {
     position: fixed;
     inset: 0;
@@ -55,7 +58,7 @@ body {
     position: absolute;
     padding: 10px 15px;
     border-radius: 15px;
-    max-width: 20%;
+    max-width: 10%;
     font-size: 14px;
     line-height: 1.4;
     filter: drop-shadow(black 0px 0px 20px);
@@ -159,11 +162,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     position: absolute;
     top: 100%;
+
     width: 100vw;
     height: 100vh;
-    transition: all 0.5s ease;
+    border: none;
+    background-color: transparent;
     z-index: 5;
 }
 
@@ -435,8 +441,8 @@ body {
         transform: scale(0.5) translate(20px, 360px);
     }
     #contact {
-        left: 55vw;
-        scale: 0.15;
+        left: 65vw;
+        scale: 0.2;
     }
     #phone {
         scale: 0.5;
