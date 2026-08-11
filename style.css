@@ -48,7 +48,7 @@ body {
 }
 
 .bubble {
-    transform:translateY(200px) translateX(200px);
+    transform:translateY(150px) translateX(400px);
     scale: 1.5;
     margin: 10px;
     z-index: 5;
@@ -190,7 +190,7 @@ body {
     height: 75%;
     width: 80%;
     overflow-y: scroll;
-    border: ;
+    border: none;
 }
 
 #arts #arts-menu {
@@ -445,30 +445,25 @@ body {
     #computer {
     width: 100vw;
     max-width: 600px;
-
     aspect-ratio: 558 / 984;
     border: none;
-    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
     }
 #arts {
-    width: 100vw;
+    width: 90vw;
     max-width: 600px;
     aspect-ratio: 558 / 984;
-
     overflow-y: auto;
     overflow-x: hidden;
-
     touch-action: pan-y;
 }
 
 #arts * {
     position: relative;
-    width: 100%;
-    height: 1500px;
+    width: 60%;
 }
 
 }
