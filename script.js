@@ -188,6 +188,7 @@ function hideMyArt() {
 
 function showContact() {
     contact.style.transform = 'translateX(-800px)'
+    contact.style.opacity = '100%'
     overlay.style.transition = 'all 0.5s ease'
     overlay.style.opacity = '100%'
     overlay.style.top = '0'
@@ -196,6 +197,7 @@ function showContact() {
 }
 function hideContact() {
     contact.style.transform = 'translateX(1500px)'
+    contact.style.opacity = '0%'
     overlay.style.transition = 'all 0.5s ease'
     overlay.style.opacity = '0%'
     overlay.style.top = '100%'
