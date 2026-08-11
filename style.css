@@ -463,6 +463,9 @@ body {
 
     }
 #arts {
+    display: flex;
+    justify-items: center;
+    align-items: center;
     width: 100vw;
     max-width: 600px;
     aspect-ratio: 558 / 984;
@@ -473,7 +476,7 @@ body {
 
 #arts * {
     position: relative;
-    width: 60%;
+    width: 100%;
 }
 
 }
