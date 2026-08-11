@@ -189,7 +189,7 @@ body {
     background-image: url("./images/art-background.png");
     height: 75%;
     width: 80%;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 #arts #arts-menu {
@@ -456,12 +456,14 @@ body {
     #arts {
     width: 100vw;
     max-width: 600px;
-    border: none;
-
     aspect-ratio: 558 / 984;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-    }
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+}
+
+
 }
