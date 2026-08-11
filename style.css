@@ -185,6 +185,8 @@ body {
     scale: 1.2;
     filter: drop-shadow(black 0px 0px 100px);
     border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 #arts {
@@ -197,6 +199,7 @@ body {
     width: 80%;
     overflow-y: scroll;
     border: none;
+    outline: none;
 }
 
 #arts #arts-menu {
@@ -273,6 +276,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+    
+
 
 
 .close-comp {
