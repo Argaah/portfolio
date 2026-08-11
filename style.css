@@ -423,7 +423,7 @@ body {
         transform: scale(0.5) translate(-30px, -200px);
     }
     #bubble {
-        transform: scale(0.5) translate(20px, 250px);
+        transform: scale(0.5) translate(20px, 360px);
     }
     #contact {
         left: 55vw;
